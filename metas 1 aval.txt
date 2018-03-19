@@ -1,0 +1,9 @@
+1- descrição contextual da aplicação ( listar requisitos funcionais/ nao funcionais)
+2- listar objetos da descrição contextual
+3- diagramas de caso de uso	
+4- protipação (baixa fidelidade)
+5- definir cenários (detalhamento dos casos de uso)
+6- definição de classes candidatas 
+7- diagrama de sequencia ( de cada cenario)
+
+ 
