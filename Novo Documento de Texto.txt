@@ -1,0 +1,10 @@
+Descrição cont
+Diagrama Caso Uso
+Definir cenpario dos diagramas de cada caso de uso
+Dentro dos cenário- detalhar os cenario do caso de uso (Pasta Detalhamento de caso de uso )
+Diagrama de sequencia ( Cada detalhamento do fluxo do caso de uso)
+Prototipação (seguindo as telas no diagram de sequencia)
+Diagrama de classes
+
+
+
