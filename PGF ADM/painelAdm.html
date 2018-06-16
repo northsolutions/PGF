@@ -14,15 +14,34 @@
     
 <div class="w3-container w3-center w3-animate-right">
     
+    <audio id="notif">
+        <source src="Notification.mp3" type="audio/mp3"/>
+    </audio>
+    
     <div class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin w3-round-xlarge">
         <div class="w3-container">
-            <h1 class="w3-text-black">GUICHÊ 1</h1>
+            <h1 class="w3-text-black">GUICHÊ <span class="guiNum"></span></h1>
+            
+            <div class="painelChama">
             <hr>
             
-            <button class="w3-button w3-teal w3-round-xxlarge w3-border w3-border-black w3-card-4" style="width:50%" onclick="pegarSenha()">Chamar Senha</button>
+            <button class="chamaSenha w3-button w3-teal w3-round-xxlarge w3-border w3-border-black w3-card-4" style="width:50%">Chamar Senha</button>
             <br><br>
             
             <a href="#"><i style="color: red;" onclick="sair()">Sair</i></a>
+            </div>
+                
+            <div class="senhaChamada" style="display: none;">
+                <input name="idSenha" id="idSenha" value="" type="hidden">
+                <h3 class="w3-text-teal">SENHA</h3>
+                <span class="senha w3-tag w3-jumbo w3-green w3-padding-large w3-border w3-border-black w3-card-4"></span><br>
+
+                <hr style="margin-bottom: 4%;">
+
+                <a href="#" class="finAte"><i class="material-icons w3-xxxlarge" style="color: red; margin-top: -20px;">close</i></a>
+                <p style="color: red;">Finalizar atendimento</p>
+            </div>
+            
             <br>
             <br>
         </div>
@@ -31,6 +50,8 @@
 
     <script src="js/sweetalert.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/ajax.js"></script>
     
 </body>
 </html>

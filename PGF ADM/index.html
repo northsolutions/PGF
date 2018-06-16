@@ -19,34 +19,50 @@
             <div class="w3-row w3-section">
               <div class="w3-col" style="width:50px"><i class="w3-xxlarge"></i></div>
                 <div class="w3-rest">
-                  <select class="w3-select" name="option">
+                  <select class="w3-select select" name="option">
                       <option value="" disabled selected>Escolha seu guichê</option>
                       <option value="1">guichê 1</option>
                       <option value="2">guichê 2</option>
                       <option value="3">guichê 3</option>
+                      <option value="4">guichê 4</option>
+                      <option value="5">guichê 5</option>
                     </select>
                 </div>
             </div>
         
-        <a href="painelAdm.html"><button class="w3-button w3-section w3-green w3-ripple w3-padding w3-border w3-border-black w3-round-xlarge w3-card-4">Entrar</button></a>
+        <button class="entrar w3-button w3-section w3-teal w3-ripple w3-padding w3-border w3-border-black w3-round-xlarge w3-card-4 ent" >Entrar</button>
+        
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-section w3-red w3-ripple w3-padding w3-border w3-border-black w3-round-xlarge w3-card-4 res">Resetar Senhas</button>
+        
+        <a href="painel.html"><button class="w3-button w3-section w3-red w3-ripple w3-padding w3-border w3-border-black w3-round-xlarge w3-card-4 res">Painel</button></a>
         <br><br>
-
+    
     </div>
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <header class="w3-container w3-red"> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Apagar todas as senhas?</h2>
+          </header>
+          <div class="w3-container modal">
+              <br>
+              <input type="text" placeholder="Usuario" id="user"><br>
+              <input type="password" placeholder="Senha" id="pass"><br>
+              <input type="button" value="Resetar" id="reset">
+          </div>
+          <footer class="w3-container w3-teal">
+            <p></p>
+          </footer>
+        </div>
+      </div>
+    
 </div>
 
-    <script src="js/ajax.js"></script>
     <script src="js/jquery.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/sweetalert.min.js"></script>
     
-    <script>
-        $(function(){
-            $('input, textarea').on('keypress', function(e){
-                if (e.keyCode == 13) {
-                    e.preventDefault();
-                    $('#entrar').click();
-                }
-            });
-        });
-    </script>
     
 </body>
 </html>

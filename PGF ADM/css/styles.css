@@ -75,3 +75,9 @@ input[type=checkbox]:checked + .switch-btn:before {
 input[type=checkbox]:checked + .switch-btn{
     background-color: #4CAF50;
 }
+.res{
+    float: left;
+}
+.ent{
+    float: right;
+}

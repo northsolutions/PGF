@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Painel administrativo</title>
+    <title>Painel de senhas</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="css/w3.css">
@@ -14,7 +14,12 @@
     
 <div class="w3-container w3-center w3-animate-right">
     
-    <div class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin w3-round-xlarge">
+    <audio id="not">
+        <source src="Notification.mp3" type="audio/mp3"/>
+    </audio>
+    
+    <h1>ULTIMAS SENHAS CHAMADAS</h1>
+    <div class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin w3-round-xlarge painel">
         <table class="w3-table-all">
         <thead>
           <tr class="w3-red">
@@ -22,24 +27,20 @@
             <th>Guichê</th>
           </tr>
         </thead>
-            <tr>
-              <td>01</td>
-              <td>Guichê 1</td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>Guichê 2</td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td>Guichê 3</td>
-            </tr>
+            <tbody id="list">
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+            </tbody>
       </table>
     </div>
+    
 </div>
-
-    <script src="js/sweetalert.min.js"></script>
+    
     <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/ajax.js"></script>
     
 </body>
 </html>
